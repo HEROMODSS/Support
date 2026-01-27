@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HEROMODS Support</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Support HEROMODS</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Pacifico&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -14,37 +15,44 @@
       background-color: #fff0f5;
       color: #333;
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      justify-content: center;
       padding: 50px 20px;
     }
 
     h1 {
-      font-size: 36px;
+      font-size: 48px;
+      font-weight: 900;
       color: #d81b60;
-      margin-bottom: 15px;
       text-align: center;
+      margin-bottom: 10px;
     }
 
-    p {
-      max-width: 600px;
+    p.subtitle {
+      font-family: 'Pacifico', cursive;
+      font-size: 22px;
       text-align: center;
-      margin-bottom: 20px;
-      font-size: 18px;
+      color: #ff4081;
+      margin-bottom: 40px;
     }
 
-    #content {
-      max-width: 600px;
+    .support-box {
+      max-width: 700px;
       width: 100%;
       background: #fff;
-      padding: 25px;
-      border-radius: 16px;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-      text-align: left;
+      border-radius: 25px;
+      padding: 35px 30px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+      line-height: 1.7;
+    }
+
+    .support-box p {
+      font-size: 18px;
+      margin-bottom: 20px;
     }
 
     h3 {
       color: #d81b60;
+      margin-top: 20px;
       margin-bottom: 10px;
     }
 
@@ -69,7 +77,7 @@
       justify-content: center;
       flex-wrap: wrap;
       gap: 15px;
-      margin-top: 30px;
+      margin-top: 25px;
     }
 
     .button-container a button {
@@ -99,91 +107,38 @@
 </head>
 <body>
 
-  <h1>Support HEROMODS</h1>
-  <p>Your support helps us continue building, maintaining, and improving for the community.</p>
-  <p>Your support truly means a lot to us. If you enjoy our work and find it useful, consider supporting us. Every contribution helps us continue improving, maintaining, and building more for the community.</p>
+  <div>
+    <!-- Title -->
+    <h1>Support HEROMODS</h1>
+    <p class="subtitle">Your support helps us continue building, maintaining, and improving for the community.</p>
 
-  <div id="content">
-    <h3>💳 Support Options (Tap to Copy)</h3>
-    <div class="support-item" onclick="copyToClipboard('1176868462')">
-      🔹 Binance ID: 1176868462
+    <!-- Support Box -->
+    <div class="support-box">
+      <p>Your support truly means a lot to us. If you enjoy our work and find it useful, consider supporting us. Every contribution helps us continue improving, maintaining, and building more for the community.</p>
+
+      <h3>💳 Support Options (Tap to Copy)</h3>
+      <div class="support-item" onclick="copyToClipboard('1176868462')">
+        🔹 Binance ID: 1176868462
+      </div>
+      <div class="support-item" onclick="copyToClipboard('TFeMP6MxoUh9fTXr7nUieBAs6GqtK9KeJ8')">
+        🔹 TRC20 (USDT / TRX): TFeMP6MxoUh9fTXr7nUieBAs6GqtK9KeJ8
+      </div>
+      <div class="support-item" onclick="copyToClipboard('UQB5jHfSUjh2pDgsXFOmzVoF8j53_vfY0zet6iM2PRxjne0J')">
+        🔹 TON: UQB5jHfSUjh2pDgsXFOmzVoF8j53_vfY0zet6iM2PRxjne0J
+      </div>
+
+      <p>Once you donate, please send a screenshot to <a href="mailto:official.heromods@gmail.com">official.heromods@gmail.com</a> to verify your contribution.</p>
+      <p>Thank you for supporting HeroMods and being part of the journey! 🙏</p>
+
+      <div class="button-container">
+        <a href="https://t.me/HEROMODSS" target="_blank">
+          <button><i class="fab fa-telegram-plane"></i> Join Telegram Channel</button>
+        </a>
+        <a href="https://whatsapp.com/channel/0029VasmgCC3GJP3xMyh6N07" target="_blank">
+          <button><i class="fab fa-whatsapp"></i> Join WhatsApp Channel</button>
+        </a>
+      </div>
     </div>
-    <div class="support-item" onclick="copyToClipboard('TFeMP6MxoUh9fTXr7nUieBAs6GqtK9KeJ8')">
-      🔹 TRC20 (USDT / TRX): TFeMP6MxoUh9fTXr7nUieBAs6GqtK9KeJ8
-    </div>
-    <div class="support-item" onclick="copyToClipboard('UQB5jHfSUjh2pDgsXFOmzVoF8j53_vfY0zet6iM2PRxjne0J')">
-      🔹 TON: UQB5jHfSUjh2pDgsXFOmzVoF8j53_vfY0zet6iM2PRxjne0J
-    </div>
-
-    <p>Once you donate, please send a screenshot to <a href="mailto:official.heromods@gmail.com">official.heromods@gmail.com</a> to verify your contribution.</p>
-    <p>Thank you for supporting HeroMods and being part of the journey! 🙏</p>
-
-    <div class="button-container">
-      <a href="https://t.me/HEROMODSS" target="_blank">
-        <button><i class="fab fa-telegram-plane"></i> Join Telegram Channel</button>
-      </a>
-      <a href="https://whatsapp.com/channel/0029VasmgCC3GJP3xMyh6N07" target="_blank">
-        <button><i class="fab fa-whatsapp"></i> Join WhatsApp Channel</button>
-      </a>
-    </div>
-  </div>
-
-  <script>
-    function copyToClipboard(text) {
-      navigator.clipboard.writeText(text).then(() => {
-        alert('Copied to clipboard: ' + text);
-      });
-    }
-  </script>
-
-</body>
-</html>    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .button-container {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-top: 20px;
-    }
-  </style>
-</head>
-<body>
-
-  <h1>Her<span style="color:#333;">o</span>M<span class="android-icon"><i class="fab fa-android"></i></span>DS</h1>
-  <p>Click the button below to see how you can support us. Your support helps us continue building, maintaining, and improving for the community.</p>
-
-  <div class="button-container">
-    <a href="https://t.me/HEROMODSS" target="_blank">
-      <button><i class="fab fa-telegram-plane"></i> Join Telegram Channel</button>
-    </a>
-    <a href="https://whatsapp.com/channel/0029VasmgCC3GJP3xMyh6N07" target="_blank">
-      <button><i class="fab fa-whatsapp"></i> Join WhatsApp Channel</button>
-    </a>
-  </div>
-
-  <div id="content">
-    <p>Your support truly means a lot to us. If you enjoy our work and find it useful, consider supporting us. Every contribution helps us continue improving, maintaining, and building more for the community.</p>
-
-    <h3>💳 Support Options (Tap to Copy)</h3>
-
-    <div class="support-item" onclick="copyToClipboard('1176868462')">
-      🔹 Binance ID: 1176868462
-    </div>
-
-    <div class="support-item" onclick="copyToClipboard('TFeMP6MxoUh9fTXr7nUieBAs6GqtK9KeJ8')">
-      🔹 TRC20 (USDT / TRX): TFeMP6MxoUh9fTXr7nUieBAs6GqtK9KeJ8
-    </div>
-
-    <div class="support-item" onclick="copyToClipboard('UQB5jHfSUjh2pDgsXFOmzVoF8j53_vfY0zet6iM2PRxjne0J')">
-      🔹 TON: UQB5jHfSUjh2pDgsXFOmzVoF8j53_vfY0zet6iM2PRxjne0J
-    </div>
-
-    <p>Once you donate, please send a screenshot to <a href="mailto:official.heromods@gmail.com">official.heromods@gmail.com</a> to verify your contribution.</p>
-    <p>Thank you for supporting HeroMods and being part of the journey! 🙏</p>
   </div>
 
   <script>
