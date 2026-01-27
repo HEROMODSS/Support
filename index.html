@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HeroMods Support Page</title>
+  <title>HEROMODS (Support)</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     /* Basic Reset */
     * {
@@ -26,6 +27,15 @@
     h1 {
       color: #d81b60; /* Material pink */
       margin-bottom: 10px;
+      font-size: 36px;
+      text-align: center;
+    }
+
+    /* Android icon in "MODS" */
+    h1 .android-icon {
+      font-size: 36px;
+      vertical-align: middle;
+      color: #a4c639; /* Android green */
     }
 
     p {
@@ -45,6 +55,10 @@
       cursor: pointer;
       box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
       transition: 0.3s;
+      margin: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
 
     button:hover {
@@ -54,7 +68,6 @@
 
     #content {
       margin-top: 30px;
-      display: none;
       font-size: 18px;
       max-width: 600px;
       background: #fff;
@@ -94,14 +107,28 @@
     a:hover {
       text-decoration: underline;
     }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
 
-  <h1>Support HeroMods</h1>
+  <h1>Her<span style="color:#333;">o</span>M<span class="android-icon"><i class="fab fa-android"></i></span>DS</h1>
   <p>Click the button below to see how you can support us. Your support helps us continue building, maintaining, and improving for the community.</p>
-  
-  <button onclick="showContent()">Show Support Info</button>
+
+  <div class="button-container">
+    <a href="https://t.me/HEROMODSS" target="_blank">
+      <button><i class="fab fa-telegram-plane"></i> Join Telegram Channel</button>
+    </a>
+    <a href="https://whatsapp.com/channel/0029VasmgCC3GJP3xMyh6N07" target="_blank">
+      <button><i class="fab fa-whatsapp"></i> Join WhatsApp Channel</button>
+    </a>
+  </div>
 
   <div id="content">
     <p>Your support truly means a lot to us. If you enjoy our work and find it useful, consider supporting us. Every contribution helps us continue improving, maintaining, and building more for the community.</p>
@@ -125,11 +152,6 @@
   </div>
 
   <script>
-    function showContent() {
-      const content = document.getElementById('content');
-      content.style.display = content.style.display === 'none' ? 'block' : 'none';
-    }
-
     function copyToClipboard(text) {
       navigator.clipboard.writeText(text).then(() => {
         alert('Copied to clipboard: ' + text);
