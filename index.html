@@ -1,153 +1,449 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Support HEROMODS</title>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Pacifico&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
 
-    body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #fff0f5;
-      color: #333;
-      display: flex;
-      justify-content: center;
-      padding: 50px 20px;
-    }
+<meta charset="UTF-8">
 
-    h1 {
-      font-size: 48px;
-      font-weight: 900;
-      color: #d81b60;
-      text-align: center;
-      margin-bottom: 10px;
-    }
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-    p.subtitle {
-      font-family: 'Pacifico', cursive;
-      font-size: 22px;
-      text-align: center;
-      color: #ff4081;
-      margin-bottom: 40px;
-    }
+<title>Support HeroMods</title>
 
-    .support-box {
-      max-width: 700px;
-      width: 100%;
-      background: #fff;
-      border-radius: 25px;
-      padding: 35px 30px;
-      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-      line-height: 1.7;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Pacifico&display=swap"
+rel="stylesheet">
 
-    .support-box p {
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    h3 {
-      color: #d81b60;
-      margin-top: 20px;
-      margin-bottom: 10px;
-    }
+<style>
 
-    .support-item {
-      margin: 12px 0;
-      padding: 14px 20px;
-      border-radius: 12px;
-      background: #ffe4ec;
-      cursor: pointer;
-      font-weight: 500;
-      user-select: all;
-      transition: 0.3s;
-    }
+/* RESET */
 
-    .support-item:hover {
-      background: #ffccd9;
-      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-    }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Roboto',sans-serif;
+}
 
-    .button-container {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 15px;
-      margin-top: 25px;
-    }
+/* MOBILE-FIRST BODY */
 
-    .button-container a button {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 12px 24px;
-      font-size: 16px;
-      font-weight: 500;
-      border: none;
-      border-radius: 12px;
-      cursor: pointer;
-      background: #f48fb1;
-      color: #fff;
-      transition: 0.3s;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
+body{
 
-    .button-container a button:hover {
-      background: #f06292;
-      box-shadow: 0 6px 10px rgba(0,0,0,0.15);
-    }
+background:
+linear-gradient(
+135deg,
+#fde4ec,
+#f8bbd0
+);
 
-    a { text-decoration: none; color: #d81b60; font-weight: 500; }
-    a:hover { text-decoration: underline; }
-  </style>
+padding:18px;
+
+min-height:100vh;
+
+}
+
+/* CONTAINER */
+
+.container{
+
+width:100%;
+max-width:600px;
+
+margin:auto;
+
+}
+
+/* TITLE */
+
+.title{
+
+font-size:1.9rem;
+
+text-align:center;
+
+font-weight:700;
+
+color:#c2185b;
+
+margin-bottom:6px;
+
+}
+
+.subtitle{
+
+font-family:'Pacifico',cursive;
+
+text-align:center;
+
+color:#ad1457;
+
+font-size:1rem;
+
+margin-bottom:22px;
+
+}
+
+/* MAIN CARD */
+
+.card{
+
+background:white;
+
+border-radius:18px;
+
+padding:22px 18px;
+
+box-shadow:
+0 8px 25px rgba(0,0,0,0.1);
+
+}
+
+/* DESCRIPTION */
+
+.desc{
+
+font-size:.95rem;
+
+text-align:center;
+
+color:#555;
+
+margin-bottom:22px;
+
+line-height:1.5;
+
+}
+
+/* SUPPORT ITEMS */
+
+.support-item{
+
+background:#ffe4ec;
+
+border-radius:14px;
+
+padding:16px;
+
+margin-bottom:14px;
+
+cursor:pointer;
+
+transition:.2s;
+
+}
+
+.support-item:active{
+
+transform:scale(.97);
+
+}
+
+/* ICON */
+
+.icon{
+
+font-size:1.4rem;
+
+color:#e91e63;
+
+margin-bottom:6px;
+
+}
+
+/* METHOD */
+
+.method{
+
+font-weight:600;
+
+color:#c2185b;
+
+font-size:.95rem;
+
+margin-bottom:4px;
+
+}
+
+/* ADDRESS */
+
+.address{
+
+font-family:monospace;
+
+font-size:.8rem;
+
+word-break:break-all;
+
+color:#555;
+
+}
+
+/* VERIFY */
+
+.verify{
+
+text-align:center;
+
+margin-top:18px;
+
+font-size:.9rem;
+
+color:#555;
+
+}
+
+/* EMAIL BUTTON */
+
+.email{
+
+display:inline-block;
+
+margin-top:10px;
+
+padding:10px 18px;
+
+border-radius:30px;
+
+background:#e91e63;
+
+color:white;
+
+text-decoration:none;
+
+font-size:.9rem;
+
+}
+
+.email:active{
+
+background:#c2185b;
+
+}
+
+/* SOCIAL BUTTONS */
+
+.buttons{
+
+display:flex;
+
+flex-direction:column;
+
+gap:10px;
+
+margin-top:18px;
+
+}
+
+.btn{
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:8px;
+
+padding:12px;
+
+border-radius:12px;
+
+font-weight:500;
+
+color:white;
+
+text-decoration:none;
+
+}
+
+/* TELEGRAM */
+
+.telegram{
+
+background:#29b6f6;
+
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+
+background:#4caf50;
+
+}
+
+/* THANK YOU */
+
+.thanks{
+
+text-align:center;
+
+margin-top:18px;
+
+font-size:.9rem;
+
+color:#555;
+
+}
+
+/* TABLET & DESKTOP */
+
+@media(min-width:600px){
+
+.buttons{
+flex-direction:row;
+}
+
+}
+
+</style>
+
 </head>
+
 <body>
 
-  <div>
-    <!-- Title -->
-    <h1>Support HEROMODS</h1>
-    <p class="subtitle">Your support helps us continue building, maintaining, and improving for the community.</p>
+<div class="container">
 
-    <!-- Support Box -->
-    <div class="support-box">
-      <p>Your support truly means a lot to us. If you enjoy our work and find it useful, consider supporting us. Every contribution helps us continue improving, maintaining, and building more for the community.</p>
+<h1 class="title">
+Support HeroMods
+</h1>
 
-      <h3>💳 Support Options (Tap to Copy)</h3>
-      <div class="support-item" onclick="copyToClipboard('1176868462')">
-        🔹 Binance ID: 1176868462
-      </div>
-      <div class="support-item" onclick="copyToClipboard('TFeMP6MxoUh9fTXr7nUieBAs6GqtK9KeJ8')">
-        🔹 TRC20 (USDT / TRX): TFeMP6MxoUh9fTXr7nUieBAs6GqtK9KeJ8
-      </div>
-      <div class="support-item" onclick="copyToClipboard('UQB5jHfSUjh2pDgsXFOmzVoF8j53_vfY0zet6iM2PRxjne0J')">
-        🔹 TON: UQB5jHfSUjh2pDgsXFOmzVoF8j53_vfY0zet6iM2PRxjne0J
-      </div>
+<p class="subtitle">
+Helping creators build more
+</p>
 
-      <p>Once you donate, please send a screenshot to <a href="mailto:official.heromods@gmail.com">official.heromods@gmail.com</a> to verify your contribution.</p>
-      <p>Thank you for supporting HeroMods and being part of the journey! 🙏</p>
+<div class="card">
 
-      <div class="button-container">
-        <a href="https://t.me/HEROMODSS" target="_blank">
-          <button><i class="fab fa-telegram-plane"></i> Join Telegram Channel</button>
-        </a>
-        <a href="https://whatsapp.com/channel/0029VasmgCC3GJP3xMyh6N07" target="_blank">
-          <button><i class="fab fa-whatsapp"></i> Join WhatsApp Channel</button>
-        </a>
-      </div>
-    </div>
-  </div>
+<p class="desc">
 
-  <script>
-    function copyToClipboard(text) {
-      navigator.clipboard.writeText(text).then(() => {
-        alert('Copied to clipboard: ' + text);
-      });
-    }
-  </script>
+Your support helps us maintain
+and improve our projects.
+Every contribution matters.
+
+</p>
+
+<!-- BINANCE -->
+
+<div class="support-item"
+onclick="copy('1176868462')">
+
+<div class="icon">
+<i class="fas fa-id-badge"></i>
+</div>
+
+<div class="method">
+Binance ID
+</div>
+
+<div class="address">
+1176868462
+</div>
+
+</div>
+
+<!-- TRC20 -->
+
+<div class="support-item"
+onclick="copy('TFeMP6MxoUh9fTXr7nUieBAs6GqtK9KeJ8')">
+
+<div class="icon">
+<i class="fas fa-coins"></i>
+</div>
+
+<div class="method">
+TRC20 (USDT / TRX)
+</div>
+
+<div class="address">
+TFeMP6MxoUh9fTXr7nUieBAs6GqtK9KeJ8
+</div>
+
+</div>
+
+<!-- TON -->
+
+<div class="support-item"
+onclick="copy('UQB5jHfSUjh2pDgsXFOmzVoF8j53_vfY0zet6iM2PRxjne0J')">
+
+<div class="icon">
+<i class="fab fa-telegram-plane"></i>
+</div>
+
+<div class="method">
+TON Wallet
+</div>
+
+<div class="address">
+UQB5jHfSUjh2pDgsXFOmzVoF8j53_vfY0zet6iM2PRxjne0J
+</div>
+
+</div>
+
+<div class="verify">
+
+After donating, send screenshot to:
+
+<br>
+
+<a href="mailto:official.heromods@gmail.com"
+class="email">
+
+official.heromods@gmail.com
+
+</a>
+
+</div>
+
+<div class="buttons">
+
+<a href="https://t.me/HEROMODSS"
+target="_blank"
+class="btn telegram">
+
+<i class="fab fa-telegram-plane"></i>
+
+Telegram Channel
+
+</a>
+
+<a href="https://whatsapp.com/channel/0029VasmgCC3GJP3xMyh6N07"
+target="_blank"
+class="btn whatsapp">
+
+<i class="fab fa-whatsapp"></i>
+
+WhatsApp Channel
+
+</a>
+
+</div>
+
+</div>
+
+<p class="thanks">
+
+Thank you for supporting HeroMods ❤️
+
+</p>
+
+</div>
+
+<script>
+
+function copy(text){
+
+navigator.clipboard.writeText(text).then(()=>{
+
+alert("Copied ✔");
+
+});
+
+}
+
+</script>
 
 </body>
+
 </html>
